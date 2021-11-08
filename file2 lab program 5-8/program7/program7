@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "enter the temp in fahrenheit "
+read f
+c=`echo "scale=4; ($f-32)/1.8"|bc`
+echo " $f F is equal to $c C " 
