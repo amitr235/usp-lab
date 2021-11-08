@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "Enter the no."
+read no
+if [ $no -eq 0 ] 
+then
+echo "Zero"
+elif [ $no -lt 0 ] 
+then
+echo "Negative"
+else
+echo "Positive"
+fi
