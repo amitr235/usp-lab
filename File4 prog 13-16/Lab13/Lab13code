@@ -1,1 +1,18 @@
+#!/bin/bash 
 
+for ((i=1; i<=6; i=i+1)) 
+do
+echo "Enter CIE marks"
+read cie
+echo "Enter SEE marks"
+read see 
+total=$((cie+see))
+if [ $total -gt 40 ]
+then
+countpass=$((countpass+1))
+else
+countfail=$((countfail+1))
+fi
+done
+echo "$countpass subjects passed"
+echo "$countfail subjects failed"
