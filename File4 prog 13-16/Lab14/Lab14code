@@ -1,1 +1,19 @@
-
+#!/bin/bash 
+echo "Enter the number"
+read n 
+a=0
+b=1
+echo "The fibonacci series is:"
+if [ $n -gt 0 ]
+then 
+for((i=0; i<n; i++))
+do
+echo "$a"
+fib=$((a+b))
+a=$b
+b=$fib
+done
+else
+echo "given number is invalid"
+echo "number should be greater than 0"
+fi
